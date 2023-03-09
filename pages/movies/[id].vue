@@ -3,7 +3,7 @@ const route = useRoute();
 
 // call useFectch for $fetch + useAsyncData shorthand
 const { data } = await useFetch(
-  `http://www.omdbapi.com/?apikey=f32d19b1&i=${route.params.id}`,
+  `https://www.omdbapi.com/?apikey=f32d19b1&i=${route.params.id}`,
   {
     pick: ["Plot", "Title", "Poster"],
     key: `/movies/${route.params.id}`,

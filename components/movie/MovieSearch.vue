@@ -4,7 +4,7 @@ const movies = ref([]);
 
 async function search() {
   const { Search } = await $fetch(
-    `http://www.omdbapi.com/?apikey=f32d19b1&s=${query.value}`
+    `https://www.omdbapi.com/?apikey=f32d19b1&s=${query.value}`
   );
   movies.value = Search;
 }
